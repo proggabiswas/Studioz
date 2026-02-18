@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #550404;
+    color: antiquewhite;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin: 0 20px;
+    color: antiquewhite;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #ff0000;
+}
+
+#home{
+    background-color: #d1d1c2;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGlvfGVufDB8fDB8fHww&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+#about{
+    background-color: #8b1111;
+    padding: 50px 100px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#services{
+    background-color: #d1d1c2;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+#contact{
+    background-color: #01411aef;
+    padding: 50px 100px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+footer{
+    background-color: #02251e;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px 0;
+}
