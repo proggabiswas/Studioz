@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#e00909;
+   --black: #000;
+   --btn-color:#ece7e7;
+   --btn-hover:#1a1919;
+   --sub-color:#fdf7f7;
+   --white:#f0e9b0;
+   --border:.1rem solid rgba(0, 0, 0, 0);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 
 html, body{
@@ -17,47 +30,83 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 100px;
-    background-color: #550404;
-    color: antiquewhite;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+header h1{
+    color: var(--main-color);
+    font-size: 34px;
 }
 
 nav ul{
     display: flex;
-    list-style: none;
+    list-style: none; 
+    padding-right: 25px;
     
 }
 
 nav ul li{
     margin: 0 20px;
-    color: antiquewhite;
+    
 }
 
 nav ul li a{
     text-decoration: none;
-    color: antiquewhite;
+    color: var(--main-color);
     font-size: 18px;
     transition: color 0.3s ease;
+    padding: 5px;
 }
 
 nav ul li a:hover{
-    color: #ff0000;
+    color: var(--btn-color);
+    font-weight: bold;
+}
+
+nav button{
+    /* background-color: var(--main-color); */
+    background-color: transparent;
+    color: var(--main-color);
+    padding: 0 1.5rem;
+    font-size: 16px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav button:hover{
+    background-color: var(--btn-color);
+    color: var(--main-color);
 }
 
 #home{
     background-color: #d1d1c2;
-    padding: 50px 100px;
     text-align: center;
 }
 
 .banner{
     display: flex;
+    background-image: url("willian-justen-de-vasconcellos-4uPDyJ8AAS4-unsplash.jpg");
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGlvfGVufDB8fDB8fHww&w=1000&q=80');
+    height: 80vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
-    color: white;
+    
+    text-align: center;
+}
+
+
+
+#services{
+    background-color: #d88c35;
+    padding: 50px 100px;
     text-align: center;
 }
 
@@ -68,10 +117,18 @@ nav ul li a:hover{
     color: antiquewhite;
 }
 
-#services{
-    background-color: #d1d1c2;
+#portfolio{
+    background-color: #b6b186ef;
     padding: 50px 100px;
     text-align: center;
+    color: antiquewhite;
+}
+
+#consultation{
+    background-color: #01411aef;
+    padding: 50px 100px;
+    text-align: center;
+    color: antiquewhite;
 }
 
 #contact{
