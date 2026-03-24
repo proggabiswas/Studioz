@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="style.css">
-    <title>Studioz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Studioz Ko</title>
 </head>
 <body>
     <header>
-        <h1>Studioz</h1>
+        <h1>Studioz Ko</h1>
         <nav>
             <ul>
                 <li><a href="#home"><h4>Home</h4></a></li>
@@ -22,22 +24,182 @@
     </header>
 
     <section id="home">
-        <div class="banner"></div>
-        <h2>Welcome to Studioz</h2>
-        <p>An one-stop solution for all your creative needs.</p>
+        <div class="banner">
+            <h2>Welcome to Studioz Ko</h2>
+            <br>
+            <p>An one-stop solution for all your creative needs.</p>
+            <div class="banner-buttons">
+                <button type="button" id="get-started-btn">Get Started</button>
+                <button type="button" id="learn-more-btn">Contact Us</button>
+            </div>
+        </div>
+        
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Graphic Design</li>
-            <li>Web Development</li>
-            <li>Digital Marketing</li>
-            <li>Brand Strategy</li>
-        </ul>
+    <!-- <section id="services">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <h2>Our Services</h2>
+            <pre>We offer a wide range of services to help your business thrive in the digital world.
+            Comprehensive digital marketing solutions tailored to elevate your brand and achieve your business goals.
+            </pre> -->
+            
+            <!-- <ul class="services-list">
+                <li>Graphic Design <br>
+                    <pre>Eye-catching visual designs that 
+                        communicate your brand story and 
+                        leave a lasting impression on your 
+                        audience.</pre>
+                </li>
+                <li>Web Development <br>
+                    <p>Custom-built, responsive websites that convert visitors into customers with stunning design and seamless functionality.</p>
+                </li>
+                <li>Social Media Marketing
+                    <p>Strategic social media campaigns that engage your audience and drive meaningful interactions with your brand.</p>
+                </li>
+                <li>Brand Strategy
+                    <p>Comprehensive brand development services that define your unique identity and position your business for success.</p>
+                </li>
+                <li>
+                    Graphic Design
+                    <p>Eye-catching visual designs that communicate your brand story and leave a lasting impression on your audience.</p>
+                </li>
+                <li>
+                    Video Production
+                    <p>High-quality video content that captivates your audience and effectively communicates your brand message.</p>
+                </li>
+                <li>
+                    Logo Designing
+                    <p>Professional logo design services that create memorable and impactful brand identities for your business.</p>
+                </li>
+            </ul>
+        </div>-->
+    <section class="services">
+    <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="card">
+                <i class="icon">🎨</i>
+                <h3>UI/UX Design</h3>
+                <p>Modern, user-focused designs that convert.</p>
+            </div>
+
+            <div class="card">
+                <i class="icon">💻</i>
+                <h3>Web Development</h3>
+                <p>Fast, responsive, scalable websites.</p>
+            </div>
+
+            <div class="card">
+                <i class="icon">📈</i>
+                <h3>Digital Marketing</h3>
+                <p>Grow your brand with data-driven strategies.</p>
+            </div>
+        </div>
+    </section>
+    <!-- </section>  -->
+
+    <section class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Why Choose Studioz Ko?</h2>
+                <p>At Studioz Ko, we don't just create designs—we craft experiences that drive results. With over 5 years of industry expertise, our team of passionate creatives and strategists delivers innovative solutions tailored to your unique vision.</p>
+                <p>From concept to launch, we ensure every project exceeds expectations, helping brands like yours stand out in a crowded market.</p>
+                <ul>
+                    <li>✔ Award-winning designs and strategies</li>
+                    <li>✔ Dedicated project managers for seamless collaboration</li>
+                    <li>✔ Cutting-edge technology and tools</li>
+                    <li>✔ Proven track record of 200% ROI growth for clients</li>
+                </ul>
+                <a href="#consultation" class="btn-primary">Learn More About Us</a>
+            </div>
+            <div class="about-image">
+                <img src="about.jpg" alt="Our Creative Team">
+            </div>
+        </div>
     </section>
 
-    <section id="about">
+<section class="portfolio">
+  <h2>Our Work</h2>
+  <div class="portfolio-grid">
+    <div class="project">
+      <img src="p1.jpg">
+      <div class="overlay">
+        <h3>Project Name</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Project Gallery</h2>
+  <p>Explore our latest projects and creative works.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="placeholder.jpg" alt="Project 1">
+      <div class="gallery-overlay">
+        <h3>Brand Identity</h3>
+        <p>Complete rebrand for a tech startup.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <video controls>
+        <source src="placeholder.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="gallery-overlay">
+        <h3>Product Launch Video</h3>
+        <p>Engaging video for new product release.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="placeholder.jpg" alt="Project 3">
+      <div class="gallery-overlay">
+        <h3>Website Redesign</h3>
+        <p>Modern UX for e-commerce platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="stats-testimonials">
+        <div class="stats-row">
+            <div class="stat">
+                <h2>50+</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+                <h2>30+</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing work! Highly recommended."</p>
+                <h4>- Client Name</h4>
+            </div>
+        </div>
+    </section>
+
+<section class="cta">
+  <h2>Ready to start your project?</h2>
+  <button>Book a Call</button>
+</section>
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+<footer>
+  <h3>Studioz Ko </h3>
+  <p>© 2026 All rights reserved</p>
+  <h3><p id="tagline">We Build, We Boost, You Dominate</p></h3>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</footer>
+
+    <!-- <section id="about">
         <h2>About Us</h2>
         <p>Studioz is a creative agency specializing in design, development, and marketing services. We are passionate about helping businesses grow through innovative solutions.</p>
     </section>
@@ -47,17 +209,84 @@
         <p>Explore our latest projects and creative works.</p>
     </section>
 
+    Contact Us section Starts Here
     <section id="consultation">
-        <h2>Contact Us</h2>
-        <p>Email:
-            <a href="mailto:contact@studioz.com">contact@studioz.com</a>
-        </p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Studioz. All rights reserved.</p>
-    </footer>
+        <div class="content">
+            <h2><b>Contact Us</b></h2>
+            <p>Need to get in touch with us? Either fill out the form 
+            with your enquiry or find the details you'd like to contact below.
+            </br></p>
+        </div> -->
 
+      
+        <!-- <div class="container">
+            <div class="contactForm">
+                <h2><b>Send Message</b></h2>
+                <form id="sendMsg">
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required" placeholder="please enter your name">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="phone" required="required" placeholder="phone number">
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required="required" placeholder="Type your Message here..."></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="sendMessage" value="send">
+                    </div>
+                </form>
+            </div>
+            <div class="content-contact">
+                <p id="para-1">Talk to us about your Brand</p>
+                <h2>Book your Consultation now</h2>
+                <p id="para-2">Discover a range of effective brand promotion strategies tailored to your 
+                unique needs. We are dedicated to adding value to your brand and helping you 
+                achieve your goals. We invite you to speak with our team and explore how we 
+                can assist in enhancing your brand identity.</p>
+            </div>
+            <div class="contactInfo">
+                <div class="box">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <div class="text">
+                    <h3><b>Address</b></h3>
+                    <p>West Bengal,India</p>
+                </div>
+                </div>
+                <div class="box">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="text">
+                    <h3><b>Phone</b></h3>
+                    <p>tel:1234567890</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>tel:1112223333</p>
+                </div>
+                </div>
+                <div class="box">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <div class="text">
+                    <h3><b>Email</b></h3>
+                    <p>info.studiozko@gmail.com</p>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+    <!-- Contact Us section Ends Here -->
+
+
+    <!-- Footer sections Starts Here  -->
+    <!-- <footer>
+        <p id="copyright">&copy; 2026 Studioz. All rights reserved</p>
+        <h3><p id="tagline">We Build, We Boost, You Dominate</p></h3>
+    </footer> -->
+    <!-- Footer sections Ends Here  -->
     
 </body>
 </html>
