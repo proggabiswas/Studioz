@@ -137,8 +137,10 @@ nav button:hover{
 
 .banner h2{
     font-size: clamp(2.4rem, 6vw, 4.8rem);
-    margin: 0;
     line-height: 1.1;
+    font-size: 100px;
+    color: var(--btn-color);
+    margin-top: -50px;
 }
 
 .banner p{
@@ -164,11 +166,7 @@ nav button:hover{
     padding-top: 100px;
 } */
 
-.banner h2{
-    font-size: 100px;
-    color: var(--btn-color);
-    padding-top: 220px;
-}
+
 
 .banner p{
     font-size: 30px;
@@ -176,35 +174,37 @@ nav button:hover{
     padding-top: 10px;
 }
 
-#get-started-btn{
+.banner-btn {
+    text-decoration: none;
     background-color: transparent;
     color: var(--white);
     padding: 0.5rem 2rem;
     font-size: 26px;
-    border: 2px solid var(--white);
+    border: 2px solid;
     border-radius: 20px;
-    margin: 46px 30px;
+    margin: 46px 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    height:50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    height: 50px;
+    min-width: 180px;
 }
 
-#get-started-btn:hover{
+.banner-btn:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+    transform: translateY(-2px);
+}
+
+#learn-more-btn {
+    background-color: var(--btn-color);
+    color: var(--main-color);
+}
+
+#learn-more-btn:hover {
     background-color: var(--white);
     color: var(--main-color);
 }
 
-#learn-more-btn{
-    background-color: var(--btn-color);
-    color: var(--main-color);
-    padding: 0.5rem 2rem;
-    font-size: 26px;
-    /* border: 2px solid var(--main-color); */
-    border-radius: 20px;
-    margin: 50px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 #learn-more-btn:hover{
     background-color: var(--main-color);
@@ -231,14 +231,63 @@ nav button:hover{
 
 .services-list li{
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     background-color: var(--main-color);
-    padding: 10px; 
+    padding: 10px;
     gap: 20px;
 }
 
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.service-grid .card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+   
+}
+
+.service-grid .card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #ff2d2d;
+  box-shadow: 0 10px 30px rgba(255, 45, 45, 0.3);
+}
+
+.service-grid .card .icon {
+    font-size: 2.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    margin: 0 auto 0.75rem;
+    border-radius: 50%;
+    background: rgba(224,9,9,0.13);
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-grid .card h3 {
+    font-size: 1.35rem;
+    color: var(--sub-color);
+    margin: 0.4rem 0 0.7rem;
+}
+
+.service-grid .card p {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--white);
+    margin: 0;
+}
+
 #about{
-    background-color: #8b1111;
+    background-color: #591c1c;
     padding: 50px 100px;
     text-align: center;
     color: antiquewhite;
@@ -262,7 +311,7 @@ nav button:hover{
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #e94560;
+    color: #dfd8d9;
 }
 
 .about-text p {
@@ -285,15 +334,19 @@ nav button:hover{
 .btn-primary {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: #e94560;
+    background: transparent;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: 2px solid;
     transition: background 0.3s;
+    font-weight: 500;
 }
 
 .btn-primary:hover {
-    background: #d6336c;
+    background: #dfd8d9;
+    color:#591c1c;
+    font-weight: 600;
 }
 
 .gallery {
@@ -305,6 +358,7 @@ nav button:hover{
 .gallery h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    color: #591c1c;
 }
 
 .gallery p {
@@ -548,6 +602,84 @@ nav button:hover{
 
 
 /* for FOOTER SECTION */
+/* CTA + CONTACT FLEX LAYOUT */
+.cta-contact {
+    background: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+}
+
+.cta-box,
+.contact-box {
+    flex: 1 1 320px;
+    max-width: 560px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.11);
+    padding: 1.8rem;
+}
+
+.cta-box h2,
+.contact-box h2 {
+    margin: 0 0 1rem;
+    color: #1a1a1a;
+}
+
+.cta-box .btn-primary {
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--btn-color);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid white;
+}
+
+.cta-box .btn-primary:hover {
+    background: #a80606;
+    color: #fff;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-box input,
+.contact-box textarea,
+.contact-box button {
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    padding: 0.65rem 0.9rem;
+    font-size: 1rem;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    outline: 2px solid var(--main-color);
+    border-color: var(--main-color);
+}
+
+.contact-box button {
+    background: var(--main-color);
+    color: var(--btn-color);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact-box button:hover {
+    background: #a80606;
+}
+
 footer{
     background-color: var(--background-color);
     color: var(--main-color);
@@ -555,15 +687,23 @@ footer{
     font-size: 17px;
     padding: 20px;
     display: flex;
-    
-    
 }
 
 footer p#copyright{
-    margin-left: 250px;
+    margin-top: 2px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
 footer p#tagline{
     margin-left: 700px;
+    color: rgb(179, 172, 172);
+}
+
+.socials{
+    margin-left: 30px;
+}
+
+#instagram{
+    margin-left: 160px;
 }

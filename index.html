@@ -14,11 +14,11 @@
         <nav>
             <ul>
                 <li><a href="#home"><h4>Home</h4></a></li>
-                <li><a href="#services"><h4>Services</h4></a></li>
+                <li><a href="#service"><h4>Services</h4></a></li>
                 <li><a href="#about"><h4>About</h4></a></li>
-                <li><a href="#portfolio"><h4>Portfolio</h4></a></li>
+                <li><a href="#gallery"><h4>Portfolio</h4></a></li>
                 <li><a href="#consultation"><h4>Consultation</h4></a></li>
-                <button type="button" id="book-call-btn"><h4>Book a Call</h4></button>
+                <button type="button" id="book-call-btn"><h4><a href="#contact">Book a Call</a></h4></button>
             </ul>
         </nav>
     </header>
@@ -29,11 +29,10 @@
             <br>
             <p>An one-stop solution for all your creative needs.</p>
             <div class="banner-buttons">
-                <button type="button" id="get-started-btn">Get Started</button>
-                <button type="button" id="learn-more-btn">Contact Us</button>
+                <button type="button" class="banner-btn" id="get-started-btn" onclick="location.href='#consultation'">Get Started</button>
+                <button type="button" class="banner-btn" id="contact-btn" onclick="location.href='#contact'">Contact Us</button>
             </div>
         </div>
-        
     </section>
 
     <!-- <section id="services">
@@ -46,7 +45,7 @@
             <!-- <ul class="services-list">
                 <li>Graphic Design <br>
                     <pre>Eye-catching visual designs that 
-                        communicate your brand story and 
+                        communicate your brand story a nd 
                         leave a lasting impression on your 
                         audience.</pre>
                 </li>
@@ -74,30 +73,51 @@
             </ul>
         </div>-->
     <section class="services">
+        <div id="service">
     <h2>Our Services</h2>
         <div class="service-grid">
             <div class="card">
-                <i class="icon">🎨</i>
-                <h3>UI/UX Design</h3>
-                <p>Modern, user-focused designs that convert.</p>
-            </div>
+    <i class="icon">🧩</i>
+    <h3>UI/UX Design</h3>
+    <p>Intuitive, user-centered designs that enhance experience and drive conversions.</p>
+</div>
 
-            <div class="card">
-                <i class="icon">💻</i>
-                <h3>Web Development</h3>
-                <p>Fast, responsive, scalable websites.</p>
-            </div>
+<div class="card">
+    <i class="icon">🌐</i>
+    <h3>Web Development</h3>
+    <p>High-performance websites that are fast, responsive, and built to scale.</p>
+</div>
 
-            <div class="card">
-                <i class="icon">📈</i>
-                <h3>Digital Marketing</h3>
-                <p>Grow your brand with data-driven strategies.</p>
-            </div>
+<div class="card">
+    <i class="icon">📊</i>
+    <h3>Digital Marketing</h3>
+    <p>Strategic campaigns powered by data to grow your reach and maximize ROI.</p>
+</div>
+
+<div class="card">
+    <i class="icon">🎨</i>
+    <h3>Graphics & Logo Design</h3>
+    <p>Creative visuals and unique logos that make your brand stand out.</p>
+</div>
+
+<div class="card">
+    <i class="icon">🚀</i>
+    <h3>Brand Creation</h3>
+    <p>Building strong brand identities that connect with your audience.</p>
+</div>
+
+<div class="card">
+    <i class="icon">🎬</i>
+    <h3>Video Production</h3>
+    <p>Professional video content that engages, informs, and inspires.</p>
+</div>
+        </div>
         </div>
     </section>
     <!-- </section>  -->
 
     <section class="about">
+        <div id="about">
         <div class="about-content">
             <div class="about-text">
                 <h2>Why Choose Studioz Ko?</h2>
@@ -112,12 +132,14 @@
                 <a href="#consultation" class="btn-primary">Learn More About Us</a>
             </div>
             <div class="about-image">
-                <img src="about.jpg" alt="Our Creative Team">
+                <img src="ChatGPT Image Mar 25, 2026, 04_39_07 PM.png" alt="Our Creative Team">
             </div>
+        </div>
         </div>
     </section>
 
-<section class="portfolio">
+<!-- <section class="portfolio">
+    <div id="portfolio">
   <h2>Our Work</h2>
   <div class="portfolio-grid">
     <div class="project">
@@ -127,9 +149,11 @@
       </div>
     </div>
   </div>
-</section>
+  </div>
+</section> -->
 
 <section class="gallery">
+    <div id="gallery">
   <h2>Project Gallery</h2>
   <p>Explore our latest projects and creative works.</p>
   <div class="gallery-grid">
@@ -158,6 +182,7 @@
       </div>
     </div>
   </div>
+  </div>
 </section>
     <section class="stats-testimonials">
         <div class="stats-row">
@@ -176,26 +201,28 @@
         </div>
     </section>
 
-<section class="cta">
-  <h2>Ready to start your project?</h2>
-  <button>Book a Call</button>
-</section>
-<section class="contact">
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-    <button>Send Message</button>
-  </form>
+<section class="cta-contact">
+    <div class="cta-box" id="consultation">
+        <h2>Ready to start your project?</h2>
+        <a href="#contact" class="btn-primary">Book a Call</a>
+    </div>
+    <div class="contact-box" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </section>
 <footer>
   <h3>Studioz Ko </h3>
-  <p>© 2026 All rights reserved</p>
+  <p id="copyright">© 2026 All rights reserved</p>
   <h3><p id="tagline">We Build, We Boost, You Dominate</p></h3>
   <div class="socials">
-    <a href="#">Instagram</a>
-    <a href="#">LinkedIn</a>
+    <a id="instagram" href="#">Instagram</a>
+    <a id="linkedin" href="#">LinkedIn</a>
   </div>
 </footer>
 
